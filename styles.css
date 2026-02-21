@@ -1,0 +1,320 @@
+
+
+/* Professional Data Analytics Portfolio - Optimized for Accessibility & Hiring Managers */
+
+* {
+    box-sizing: border-box;
+}
+body{
+    color:#1a202c;
+    background:linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+ 
+header{
+    color:white;
+    background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    position: relative;
+}
+header::before{
+    content:" ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size:20px 20px;
+    pointer-events: none;
+}
+
+header img{
+    width: 250px;  /* Adjust this number */
+    height: auto;  /* Keeps proportions */
+    border-radius: 20px; 
+    border: 5px solid white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0,0.3); 
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;    
+
+}
+header img:hover{
+    transform: scale(1.05);
+}
+.intro {
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 26px;
+    margin: 0;
+    font-weight: 400;
+    color: whitesmoke;
+        
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+        margin-top: 70px;      /* Increase this - more space from paragraph */
+    margin-bottom: -50px;  /* Pushes nav down toward bottom edge */
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+}
+
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 45px; 
+    margin-bottom: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left:6px solid #1d4ed8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+
+}
+
+section::after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:100px;
+    height:100px;
+    background:linear-gradient(135deg, transparent 50%, rgba(29,78,216,.05) 50%);
+    pointer-events:none;
+}
+section:hover{
+    transform:translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+h2{
+    color: #1e3a8a;
+    font-size:36px;
+    margin-top:0;
+    margin-bottom:25px;;
+    font-weight: 700;
+    border-bottom: 4px solid #1d4ed8;
+    padding-bottom: 12px;
+    display: inline-block;
+
+}
+
+h3{
+    color: #1a202c;
+    font-size: 26px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style:none;
+    padding: 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+ul li{
+    background:linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 18px 24px;
+    border-radius: 10px;
+    border-left: 5px solid #1d4ed8;
+    font-size: 19px;
+    font-weight: 600;
+    color: #1e3a8a;
+    transition:all 0.3s ease;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.05);
+}
+ul li:hover {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    transform: translateX(3px);
+    box-shadow: 0 4px 10px rgba(29, 78, 216, 0.15);
+}
+
+ul li::before {
+    content: "# ";
+    color: #1d4ed8;
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 14px;
+}
+section:nth-of-type(3){
+    border-left-color: #059669;
+    background:linear-gradient(to bottom, white 0%, #f0fdf4 100%);
+}
+
+section:nth-of-type(3) h2 {
+    color: #065f46;
+    border-bottom-color: #059669;
+}
+
+
+section:nth-of-type(1) h2 {
+    color: #1e3a8a;
+    border-bottom-color:#1d4ed8;
+}
+
+footer {
+    background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
+    color: white;
+    padding: 50px 20px;
+    margin-top: 50px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer img{
+    border-radius:12px;
+    padding: 20px;
+    background:white;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+footer a:hover {
+    border-color: white;
+    transform: translateY(-2px);
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    }
+.centered {
+    text-align: center;
+}
+
+
+/* Improved image styling throughout */
+img {
+    border-radius: 20px;
+}
+
+/* Focus states for accessibility */
+a:focus, 
+button:focus {
+    outline: 3px solid #fbbf24;
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    
+    .intro {
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    h1 {
+        font-size: 42px;
+    }
+    
+    header p {
+        font-size: 22px;
+    }
+    
+    section {
+        padding: 30px 25px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print styles for resume purposes */
+@media print {
+    body {
+        background: white;
+    }
+    
+    section {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #e5e7eb;
+    }
+    
+    header {
+        background: #1e3a8a;
+    }
+}
+
+
