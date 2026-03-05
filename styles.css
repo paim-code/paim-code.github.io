@@ -50,7 +50,7 @@ header img{
 
 }
 header img:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .intro {
     max-width: 500px;
@@ -65,12 +65,24 @@ h1 {
     font-weight: 700;
     letter-spacing: -1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-style: inset; /*3D Border around h1*/
+    border-color:whitesmoke;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-width: 0.5px;
+}
+
+h1:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 header p {
-    font-size: 26px;
+    font-size: 28px;/*Ctrl + Alt + Share saying */
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-weight: 400;
+    font-weight: 600;
     color: whitesmoke;
         
 }
@@ -79,7 +91,7 @@ nav {
     display: flex;
     gap: 30px;
     justify-content: center;
-        margin-top: 70px;      /* Increase this - more space from paragraph */
+        margin-top: 30px;      /* Increase this - more space from paragraph */
     margin-bottom: -50px;  /* Pushes nav down toward bottom edge */
     position: relative;
     z-index: 1;
