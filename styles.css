@@ -133,8 +133,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 10px 10px 10px;
-    z-index: 1; /*Testing this trying to keep the header fixed or the main content dissapear behind*/ 
-}
+   
 
 .centered {
     text-align: center;
