@@ -22,7 +22,8 @@ header{
     align-items: center;
     padding:30px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-    position: relative;
+    position: sticky; 
+    top: 0px;
 }
 header::before{
     content:" ";
@@ -52,11 +53,11 @@ header img{
 header img:hover{
     transform: scale(1.1);
 }
-.intro {
+ .intro {
     max-width: 500px;
     text-align: center;
     position: relative;
-    z-index: 1;
+    z-index: 1; 
 }
 
 h1 {
@@ -94,7 +95,7 @@ nav {
         margin-top: 30px;      /* Increase this - more space from paragraph */
     margin-bottom: 10px;  /* Pushes nav down toward bottom edge */
     position: relative;
-    z-index: 1;
+    z-index: 1; 
 }
 
 nav a {
@@ -108,16 +109,11 @@ nav a {
     transition: all 0.3s ease;
 }
 
-.navbar { /*Sticky nav bar*/
-  position: sticky;
-  top: 0;
-  overflow:visible
-  
-}
+
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 nav a.active {
@@ -125,8 +121,9 @@ nav a.active {
     font-weight: 700;
 }
 
-
-
+/* .navbar a:visited{
+color:orange ;
+} */
 main {
     max-width: 1100px;
     margin: 0 auto;
