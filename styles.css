@@ -92,7 +92,7 @@ nav {
     gap: 30px;
     justify-content: center;
         margin-top: 30px;      /* Increase this - more space from paragraph */
-    margin-bottom: -50px;  /* Pushes nav down toward bottom edge */
+    margin-bottom: 10px;  /* Pushes nav down toward bottom edge */
     position: relative;
     z-index: 1;
 }
@@ -102,10 +102,17 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 8px 32px;/*Changes the shape around the nav buttons*/ 
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
+}
+
+.navbar { /*Sticky nav bar*/
+  position: sticky;
+  top: 0;
+  overflow:visible
+  
 }
 
 nav a:hover {
@@ -123,7 +130,7 @@ nav a.active {
 main {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 40px 10px 10px 10px;
 }
 
 .centered {
@@ -132,7 +139,7 @@ main {
 
 section {
     background-color: white;
-    padding: 45px; 
+    padding: 10px 45px; 
     margin-bottom: 35px;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -143,15 +150,15 @@ section {
 
 }
 
-section::after{
+section::after{ /*Creates a small triangular shape in the top-right corner of each section*/
     content:"";
     position:absolute;
     top:0;
     right:0;
     width:100px;
     height:100px;
-    background:linear-gradient(135deg, transparent 50%, rgba(29,78,216,.05) 50%);
-    pointer-events:none;
+    background:linear-gradient(135deg, transparent 50%, rgba(29,78,216,.05) 20%);
+    pointer-events:none; /*Ensures it doesn't interfere with clicks or interactions*/
 }
 section:hover{
     transform:translateY(-2px);
@@ -160,8 +167,7 @@ section:hover{
 h2{
     color: #1e3a8a;
     font-size:36px;
-    margin-top:0;
-    margin-bottom:25px;;
+    margin:0;
     font-weight: 700;
     border-bottom: 4px solid #1d4ed8;
     padding-bottom: 12px;
@@ -172,8 +178,7 @@ h2{
 h3{
     color: #1a202c;
     font-size: 26px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 10px;
     font-weight: 600;
 }
 
@@ -216,21 +221,29 @@ ul li::before {
     margin-right: 12px;
     font-size: 14px;
 }
-section:nth-of-type(3){
-    border-left-color: #059669;
-    background:linear-gradient(to bottom, white 0%, #f0fdf4 100%);
+
+section:nth-of-type(1){ /*Styles the first card*/
+    border-left-color: orange;
+    /* background:linear-gradient(to bottom, white 30px, #ffedd5 70%); */
 }
 
-section:nth-of-type(3) h2 {
+section:nth-of-type(1) h2 { /*Styles the h2 in the third card*/
+    color: #fb923c;
+    border-bottom-color: orange;
+
+}
+section:nth-of-type(3){ /*Styles the third card*/
+    border-left-color: #059669;
+    /* background:linear-gradient(to bottom, white 0%, #f0fdf4 100%); */
+}
+
+section:nth-of-type(3) h2 { /*Styles the h2 in the third card*/
     color: #065f46;
     border-bottom-color: #059669;
 }
 
 
-section:nth-of-type(1) h2 {
-    color: #1e3a8a;
-    border-bottom-color:#1d4ed8;
-}
+
 
 footer {
     background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
@@ -256,10 +269,14 @@ footer img:hover {
 footer a:hover {
     border-color: white;
     transform: translateY(-2px);
-}
+    }
+
 footer a {
     color: white;
-    text-decoration: none;
+    text-decoration: none; 
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 10px;  /* Gives more space between "Contact me..." and the LinkedIn logo*/
     }
 .centered {
     text-align: center;
