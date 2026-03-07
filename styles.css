@@ -22,7 +22,7 @@ header{
     align-items: center;
     padding:30px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-    position: relative; 
+    position: fixed 
     z-index: 1;/*Testing this*/
     
 }
@@ -96,8 +96,7 @@ nav {
     justify-content: center;
     margin-top: 30px;      /* Increase this - more space from paragraph */
     margin-bottom: 10px;  /* Pushes nav down toward bottom edge */
-   /* flex-wrap: wrap; */
-   position:relative;
+    position:relative;
     z-index: 1; 
 }
 
