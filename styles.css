@@ -15,17 +15,28 @@ html {
     right: 30px;
     background: #516292;
     color: white;
-    padding: 10px 14px;
+    padding: 0px 14px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
-    
-}
+    border-color: orange;
+} 
+ .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #516292; 
+    color: white;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: bolder;
+    text-decoration: none;
+    box-shadow: 0 2px 3px orange;
+ }
 
 .back-to-top:hover {
     background:dark orange;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) */
+     box-shadow: 0 10px 20px orange 
    
 }
 
@@ -65,8 +76,7 @@ html {
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         border-radius: 2px; */
        
-        
-        
+               
     }
     
     nav a {
@@ -84,11 +94,19 @@ nav a:active {
     border-color: orange;          /* click effect only while pressing */
     background: rgba(255, 255, 255, 0.2); /* optional visual press effect */
 } 
-
-    
-}
-  
-
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #516292; 
+    color: white;
+    padding: 2px 5px;
+    border-radius: 8px;
+    font-weight: bolder;
+    text-decoration: none;
+   box-shadow:  0.3px 0.7px orange; 
+ } 
+ 
     .intro {
         text-align: center;
         margin-top: 25px;
@@ -252,7 +270,7 @@ nav a.active {
 main {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 10px 10px 10px;
+    padding: 40px 10px 0px 10px;
 }
 
 .centered {
