@@ -7,6 +7,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* Back to top button */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -17,11 +19,14 @@ html {
     border-radius: 8px;
     text-decoration: none;
     font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+    
 }
 
 .back-to-top:hover {
-    background: #1e3a8a;
+    background:dark orange;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+   
 }
 
 .container {
@@ -29,7 +34,7 @@ html {
     gap: 20px;
 }
 
-/* Responsive Design */
+/* Responsive Design Mobile */
 
 @media (max-width: 768px) {
 
@@ -47,11 +52,12 @@ html {
         position: sticky;
         top: 0;
         z-index: 1000;
-        flex-wrap: wrap;
+        flex-wrap:wrap;
         display: flex;
         gap: 30px;
         justify-content: center;
-        padding: 10px 0;
+        padding: 0px 0px; /*check if the white space was removed wtih the 0 padding*/
+        margin-top:0px;
         background: linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
@@ -81,9 +87,12 @@ html {
         grid-template-columns: 1fr;
     }
 }
+/* END of Responsive Design Mobile */
+
+
 
 * {
-     box-sizing: border-box; 
+    box-sizing: border-box; 
 }
 body{
     color:#1a202c;
@@ -104,7 +113,8 @@ header{
     padding:30px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
     position: relative; 
-    z-index: 1;/*Testing this*/
+ 
+   
 
         
 }
@@ -177,10 +187,12 @@ nav {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-top: 30px;      /* Increase this - more space from paragraph */
+    margin-top: 0px;      /* Increase this - more space from paragraph */
     margin-bottom: 10px;  /* Pushes nav down toward bottom edge */
-    position:relative;
+    position:sticky;
     z-index: 1; 
+    background: linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 nav a {
@@ -190,7 +202,6 @@ nav a {
     font-weight: 500;
     padding: 8px 32px;/*Changes the shape around the nav buttons*/ 
     border-radius: 6px;
-    1background: rgba(255, 255, 255, 0.1); 
     transition: all 0.3s ease;
    
 }
@@ -269,6 +280,7 @@ h4{
     margin-top:2px;
     margin-bottom:2px;
 }
+
 p{
     font-size: 18px;
     line-height: 1.8;
@@ -381,44 +393,3 @@ button:focus {
     outline: 3px solid #fbbf24;
     outline-offset: 2px;
 }
-
-/* Responsive Design
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
-    }
-    nav {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%); 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
-}
-    .intro {
-        text-align: center;
-        margin-top: 25px;
-    }
-    
-    h1 {
-        font-size: 42px;
-    }
-    
-    header p {
-        font-size: 22px;
-    }
-    
-    section {
-        padding: 30px 25px;
-    }
-    
-    h2 {
-        font-size: 30px;
-    }
-    
-    ul {
-        grid-template-columns: 1fr;
-    }
-}
- */
