@@ -46,8 +46,11 @@ html {
 
     header img{
         width:180px;
+
+
     }
 
+    
     nav{
         position: sticky;
         top: 0;
@@ -60,7 +63,31 @@ html {
         margin-top:0px;
         background: linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border-radius: 2px; */
+       
+        
+        
     }
+    
+    nav a {
+    border: 2px solid transparent; /* base invisible border */
+    border-radius: 5px;            /* optional rounded corners */
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px); 
+}
+
+nav a:active {
+    border-color: orange;          /* click effect only while pressing */
+    background: rgba(255, 255, 255, 0.2); /* optional visual press effect */
+} 
+
+    
+}
+  
 
     .intro {
         text-align: center;
@@ -77,6 +104,7 @@ html {
 
     section {
         padding: 30px 25px;
+        scroll-margin-top:195px; /* adjust until perfect */
     }
 
     h2 {
@@ -216,6 +244,7 @@ nav a:hover {
 nav a.active {
     background: rgba(255, 255, 255, 0.4);
     font-weight: 700;
+    border-color:orange;
 }
 
 
@@ -240,6 +269,7 @@ section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     overflow: hidden;
+    
 
 } 
 
@@ -266,8 +296,9 @@ h2{
     border-bottom: 4px solid #1d4ed8;
     padding-bottom: 12px;
     display: inline-block;
-
+ 
 }
+
 
 h3{
     color: #1a202c;
